@@ -60,7 +60,7 @@ typings/
 # Generated apidocs
 api-docs/
 
-# Transpiled JavaScript files from Typescript
-/dist
+# # Transpiled JavaScript files from Typescript
+# /dist
 
 *.tsbuildinfo
