@@ -1,0 +1,25 @@
+extends ../layouts/layout
+
+block content
+  .jumbotron
+    h1 Simple Auth Demo
+    h3 By Sheldon Frith
+    p
+      a.btn.btn-lg.btn-primary(href='https://sheldonfrith.com', role='button') View My Portfolio >>
+    p
+      a.btn.btn-lg.btn-primary(href='https://github.com/Sheldonfrith/SimpleAuthDemo', role='button') View On GitHub >>
+
+
+  .row
+    .col-md-12
+      h1 What it does:
+      p.lead In this simple auth demo you can:
+      ul
+        li
+          a(href='/login') Login to your account using either a local account or social accounts
+        li
+          a(href='/logout') Logout whenever you want
+        li
+          a(href='/signup') Create a new local account stored in Sheldon Frith's database
+        li
+          a(href='/auth/account') (TEST IF IT WORKS) View your profile information, when you are logged in only.
