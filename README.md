@@ -1,5 +1,5 @@
-Simple Auth Implementation Demo
-by Sheldon Frith
+# Simple Auth Implementation Demo
+### by Sheldon Frith
 
 Front-End: SSR HTML using Pug(Jade) view engine (hosted on same server as backend)
 Back-End: Node.js, Express.js, Loopback4, Passport, Hosted on AWS
