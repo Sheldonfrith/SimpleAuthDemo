@@ -23,7 +23,7 @@
     "test:dev": "lb-mocha --allow-console-logs dist/__tests__/**/*.js && npm run posttest",
     "migrate": "node ./dist/migrate",
     "prestart": "npm run build",
-    "start": "node ."
+    "start": "set HTTPS=true && node ."
   },
   "repository": {
     "type": "git",
