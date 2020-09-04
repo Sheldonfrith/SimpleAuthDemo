@@ -1,7 +1,7 @@
 {
-  "name": "@loopback/example-passport-login",
+  "name": "Simple Auth Demo",
   "version": "1.5.5",
-  "description": "An example to demonstrate authentication with passport strategies",
+  "description": "By Sheldon Frith",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "engines": {
@@ -27,11 +27,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strongloop/loopback-next.git",
-    "directory": "examples/passport-login"
+    "url": "https://github.com/Sheldonfrith/SimpleAuthDemo",
+    "directory": ""
   },
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
+  "author": "Sheldon Frith",
+  "copyright.owner": "Sheldon Frith",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

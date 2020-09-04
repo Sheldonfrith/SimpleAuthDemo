@@ -6,6 +6,8 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const app = (module.exports = express());
 const userLoginTemplate = require.resolve('./views/pages/login.pug');
+const compression = require('compression');
+var helmet = require('helmet');
 
 /**
  * save a copy of the pug login template,
@@ -13,6 +15,9 @@ const userLoginTemplate = require.resolve('./views/pages/login.pug');
  * Reasons explained in the route handler.
  */
 const loginTemplate = require('pug').compileFile(userLoginTemplate);
+
+app.use(compression()); //Compress all routes
+app.use(helmet());
 
 //pug as view engine (new jade)
 app.set('views', path.join(__dirname, 'views'));
