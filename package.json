@@ -1,5 +1,5 @@
 {
-  "name": "Simple Auth Demo",
+  "name": "simple-auth-demo",
   "version": "1.5.5",
   "description": "By Sheldon Frith",
   "main": "dist/index.js",
