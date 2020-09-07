@@ -7,7 +7,6 @@ const bodyParser = require('body-parser');
 const app = (module.exports = express());
 const userLoginTemplate = require.resolve('./views/pages/login.pug');
 const compression = require('compression');
-var helmet = require('helmet');
 
 /**
  * save a copy of the pug login template,
@@ -17,7 +16,6 @@ var helmet = require('helmet');
 const loginTemplate = require('pug').compileFile(userLoginTemplate);
 
 app.use(compression()); //Compress all routes
-app.use(helmet());
 
 //pug as view engine (new jade)
 app.set('views', path.join(__dirname, 'views'));
@@ -70,6 +68,13 @@ function requireLogin(req, res, next) {
     next();
   }
 }
+
+//over-ride content-security-policy
+app.use(function(req, res, next) {
+  res.setHeader("Content-Security-Policy", "script-src *");
+  return next();
+});
+
 
 app.get('/', function (req, res, next) {
   res.render('pages/index', { user: req.user, url: req.url });

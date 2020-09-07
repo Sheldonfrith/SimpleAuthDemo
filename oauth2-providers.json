@@ -16,11 +16,11 @@
         ],
         "clientID": "1460124587504716",
         "clientSecret": "b740b7328257a9e56ef03617ab5d8046",
-        "callbackURL": "/api/auth/thirdparty/facebook/callback",
-        "authPath": "/api/auth/thirdparty/facebook",
-        "callbackPath": "/api/auth/thirdparty/facebook/callback",
-        "successRedirect": "/auth/account",
-        "failureRedirect": "/login",
+        "callbackURL": "https://simple-auth-demo.sheldonfrith.com/api/auth/thirdparty/facebook/callback",
+        "authPath": "https://simple-auth-demo.sheldonfrith.com/api/auth/thirdparty/facebook",
+        "callbackPath": "https://simple-auth-demo.sheldonfrith.com/api/auth/thirdparty/facebook/callback",
+        "successRedirect": "https://simple-auth-demo.sheldonfrith.com/auth/account",
+        "failureRedirect": "https://simple-auth-demo.sheldonfrith.com/login",
         "scope": [
             "email"
         ],
